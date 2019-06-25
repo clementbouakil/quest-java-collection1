@@ -23,9 +23,15 @@ public class Thanos {
         int length = heroes.size();
         List<Hero> alive = heroes.subList(0, (length/2));
 
-        for (int i = 0; i < alive.size(); i++) {
+        // METHODE AVEC BOUCLE FOR
+        /* for (int i = 0; i < alive.size(); i++) {
             Hero stuff = alive.get(i);
             System.out.println(stuff.getName());
+        } */
+
+        // METHODE AVEC FOR EACH
+        for (Hero hero : alive) {
+            System.out.println(hero.getName());
         }
     }
 }
