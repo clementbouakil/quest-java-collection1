@@ -29,10 +29,10 @@ public class Thanos {
         Collections.shuffle(heroes);    // Shuffle the heroes list
 
         int length = heroes.size();
-        ArrayList<Hero> alive = heroes.subList(0, (length+1));
+        List<Hero> alive = heroes.subList(0, (length/2));
 
         for (int i = 0; i < alive.size(); i++) {
-            Hero stuff = lunch.get(i);
+            Hero stuff = alive.get(i);
             System.out.println(stuff.getName());
         }
     }
