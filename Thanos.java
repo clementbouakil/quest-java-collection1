@@ -26,8 +26,7 @@ public class Thanos {
         heroes.add(heroNine);
         
         heroSix.setAge(1501); // It's Thor birthday, now he's 1501
-
-        // TODO 4 : Shuffle the heroes list
+        Collection.Shuffle(heroes); // Shuffle the heroes list
 
         // TODO 5 : Keep only the half of the list
 
